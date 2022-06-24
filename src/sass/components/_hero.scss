@@ -1,0 +1,33 @@
+.hero {
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../src/img/banner/photo_2022-06-16_16-59-51.jpg");
+    
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 118px;
+        padding-bottom: 118px;
+}
+
+.hero__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero__title{
+    font-size: 36px;
+    // font-family: ;
+} 
+
+.hero__description{
+
+} 
+
+.hero__button{
+
+}
+
