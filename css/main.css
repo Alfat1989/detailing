@@ -660,6 +660,38 @@ button:hover {
   padding-top: 30px;
 }
 
+.benefits__list {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+.benefits__item {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc((100% - 10px * 6) / 3);
+  }
+}
+
+.benefits__item_description {
+  margin-top: 10px;
+}
+
 .contacts__messages_icon {
   width: 25px;
   height: 25px;
@@ -746,6 +778,17 @@ button:hover {
   color: #cdd4d7;
 }
 
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -775,8 +818,7 @@ button:hover {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background: -webkit-gradient(linear, left top, right top, from(#0e0e19), to(#1b1d31));
-  background: linear-gradient(to right, #0e0e19, #1b1d31);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .menu-container {
