@@ -6,43 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detailing</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/main.css" />
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="header__nav">
-                <a href="/" class="header__logo">
-                    <img src="./img/logo/photo_2022-06-16_17-00-10.jpg" alt="logo" width="50px" />
-                </a>
+        <div class="container header__container">
+            <a href="/" class="header__link">
+                <img src="./img/logo/logo-mini.png" alt="logo" class="header__logo" />
+            </a>
 
-                <ul class="header__menu">
+            <nav class="header__nav">
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="header__menu_icon">
+                        <use href="./img/sprite.svg#burger-menu"></use>
+                    </svg>
+                </button>
+                <ul class="header__menu menu">
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Главная</a>
+                        <a href="/" class="menu__link">Главная</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">О нас</a>
+                        <a href="#about" class="menu__link">О нас</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Галерея</a>
+                        <a href="#gallery" class="menu__link">Галерея</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Контакты</a>
+                        <a href="#contacts" class="menu__link">Контакты</a>
                     </li>
                 </ul>
-
-                <a href="#" class="adress__link">
-                    <p class="adress">г. Казань</p>
-                </a>
             </nav>
 
-            <a href="tel:+79869309870" class="header__phone">+7(986) 930-98-70</a>
-            <p class="header__day">с 9:00 до 21:00</p>
+            <div class="header__adress">
+                <a href="#" class="adress__link">
+                    г. Казань
+                </a>
+                <a href="tel:+79869309870" class="header__phone">+7(986) 930-98-70</a>
+                <p class="header__day">с 9:00 до 21:00</p>
+            </div>
         </div>
     </header>
 
@@ -59,7 +68,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2 class="about__title title">О нас</h2>
                 <p class="about__description">
@@ -163,7 +172,7 @@
             </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
                 <h2 class="gallery__title title">Галлерея работ</h2>
             </div>
@@ -175,7 +184,7 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
                 <h2 class="contacts__title title">Контакты</h2>
 
@@ -200,7 +209,7 @@
                     <li class="contacts__messages_item">
                         <a href="#" class="contacts__message_link">
                             <svg class="contacts__messages_icon">
-                                <use href="./img/social-icons/sprite2.svg#telegram"></use>
+                                <use href="./img/sprite.svg#telegram"></use>
                             </svg>
                         </a>
                     </li>
@@ -208,7 +217,7 @@
                     <li class="contacts__messages_item">
                         <a href="#" class="contacts__message_link">
                             <svg class="contacts__messages_icon">
-                                <use href="./img/social-icons/sprite2.svg#whatsapp"></use>
+                                <use href="./img/sprite.svg#whatsapp"></use>
                             </svg>
                         </a>
                     </li>
@@ -216,7 +225,7 @@
                     <li class="contacts__messages_item">
                         <a href="#" class="contacts__message_link">
                             <svg class="contacts__messages_icon">
-                                <use href="./img/social-icons/sprite2.svg#instagram"></use>
+                                <use href="./img/sprite.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
@@ -224,7 +233,7 @@
                     <li class="contacts__messages_item">
                         <a href="#" class="contacts__message_link">
                             <svg class="contacts__messages_icon">
-                                <use href="./img/social-icons/sprite2.svg#facebook"></use>
+                                <use href="./img/sprite.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
@@ -235,22 +244,22 @@
 
     <footer class="footer">
         <div class="footer__container container">
-            <a href="/" class="header__logo">
-                <img src="./img/logo/photo_2022-06-16_17-00-10.jpg" alt="logo" width="50px" />
+            <a href="/" class="footer__logo">
+                <img src="./img/logo/logo-mini.png" alt="logo" width="50px" />
             </a>
 
             <ul class="footer__menu">
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Главная</a>
+                    <a href="/" class="menu__link">Главная</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">О нас</a>
+                    <a href="#about" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Галерея</a>
+                    <a href="#gallery" class="menu__link">Галерея</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
+                    <a href="#contacts" class="menu__link">Контакты</a>
                 </li>
             </ul>
 
@@ -259,12 +268,32 @@
                     <p class="adress">г. Казань</p>
                 </a>
 
-                <a href="tel:+79869309870" class="header__phone">+7(986) 930-98-70</a>
-                <p class="header__day">с 9:00 до 21:00</p>
+                <a href="tel:+79869309870" class="footer__phone">+7(986) 930-98-70</a>
+                <p class="footer__day">с 9:00 до 21:00</p>
             </adddres>
         </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu">
+            <li><a href="/" class="link">Главная</a></li>
+            <li><a href="#about" class="link">О нас</a></li>
+            <li><a href="#gallery" class="link">Галерея</a></li>
+            <li><a href="#contacts" class="link">Контакты</a></li>
+        </ul>
+
+    </div>
+
     <script src="./index.js" type="module"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

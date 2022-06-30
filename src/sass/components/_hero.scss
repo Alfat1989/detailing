@@ -1,4 +1,6 @@
 .hero {
+  width: 100%;
+  height: 100vh;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -9,8 +11,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  // padding-top: auto;
+  // padding-bottom: auto;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 
@@ -61,6 +65,9 @@
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  padding: 8px 30px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #3e44ff, #8b8cff, #3e44ff);
 
   @media screen and (min-width: 1024px) {
     margin-left: 0;
