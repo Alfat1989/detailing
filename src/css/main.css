@@ -88,7 +88,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -170,9 +170,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -225,7 +225,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type='search'] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -266,7 +266,7 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#0e0e19), to(#1b1d31));
   background: linear-gradient(to right, #0e0e19, #1b1d31);
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -298,37 +298,31 @@ h6 {
   margin: 0 auto;
   padding: 0 15px;
 }
-
 @media screen and (min-width: 280px) {
   .container {
     width: 280px;
   }
 }
-
 @media screen and (min-width: 320px) {
   .container {
     width: 320px;
   }
 }
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .container {
     width: 1024px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -350,7 +344,6 @@ button {
   letter-spacing: 0.8;
   line-height: normal;
 }
-
 button:hover {
   cursor: pointer;
   -webkit-box-shadow: 0 0px 5px 2 #3e44ff;
@@ -380,7 +373,6 @@ button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .header__menu_icon {
   fill: #ffffff;
   width: 24px;
@@ -403,7 +395,6 @@ button:hover {
     display: none;
   }
 }
-
 @media screen and (min-width: 768px) {
   .header__menu {
     margin-left: -20px;
@@ -429,7 +420,6 @@ button:hover {
   color: #ffffff;
   font-size: 16px;
 }
-
 .menu__link:hover, .menu__link:active {
   color: #4C52FF;
 }
@@ -449,7 +439,6 @@ button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 @media screen and (max-width: 767px) {
   .header__adress {
     display: none;
@@ -494,26 +483,22 @@ button:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
-
 @media screen and (min-width: 280px) {
   .hero__title {
     font-size: 26px;
     text-align: center;
   }
 }
-
 @media screen and (min-width: 320px) {
   .hero__title {
     font-size: 30px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .hero__title {
     font-size: 40px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .hero__title {
     font-size: 40px;
@@ -525,20 +510,17 @@ button:hover {
   margin-top: 20px;
   color: #cdd4d7;
 }
-
 @media screen and (min-width: 280px) {
   .hero__description {
     font-size: 14px;
     text-align: center;
   }
 }
-
 @media screen and (min-width: 768px) {
   .hero__description {
     font-size: 16px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .hero__description {
     font-size: 16px;
@@ -556,7 +538,6 @@ button:hover {
   background: -webkit-gradient(linear, left top, right top, from(#3e44ff), color-stop(#8b8cff), to(#3e44ff));
   background: linear-gradient(to right, #3e44ff, #8b8cff, #3e44ff);
 }
-
 @media screen and (min-width: 1024px) {
   .hero__button {
     margin-left: 0;
@@ -587,7 +568,6 @@ button:hover {
 .servises__list {
   margin-top: 30px;
 }
-
 @media screen and (min-width: 768px) {
   .servises__list {
     margin-left: -10px;
@@ -603,25 +583,22 @@ button:hover {
 .servises__item {
   position: relative;
 }
-
 @media screen and (min-width: 280px) {
   .servises__item {
     margin-top: 10px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .servises__item {
     display: block;
     margin-left: 10px;
     margin-right: 10px;
-    width: calc((100% - 4 * 10px)/2);
+    width: calc((100% - 40px) / 2);
   }
 }
-
 @media screen and (min-width: 1024px) {
   .servises__item {
-    width: calc((100% - 6 * 10px)/3);
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -630,7 +607,6 @@ button:hover {
   background-color: #383838;
   opacity: 0.4;
 }
-
 .servise__img:hover {
   opacity: 0.6;
   -webkit-box-shadow: 0px 0px 4px 1px white;
@@ -650,7 +626,6 @@ button:hover {
   font-size: 16px;
   font-weight: 500;
 }
-
 .servise__img:hover .servises__desc {
   opacity: 0.9;
   font-weight: 700;
@@ -663,7 +638,6 @@ button:hover {
 .benefits__list {
   margin-top: 30px;
 }
-
 @media screen and (min-width: 768px) {
   .benefits__list {
     display: -webkit-box;
@@ -679,12 +653,11 @@ button:hover {
 .benefits__item {
   text-align: center;
 }
-
 @media screen and (min-width: 768px) {
   .benefits__item {
     margin-left: 10px;
     margin-right: 10px;
-    width: calc((100% - 10px * 6) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -710,7 +683,6 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
 }
-
 @media screen and (min-width: 280px) {
   .footer__container {
     -webkit-box-pack: center;
@@ -721,7 +693,6 @@ button:hover {
             align-items: center;
   }
 }
-
 @media screen and (min-width: 768px) {
   .footer__container {
     -webkit-box-pack: justify;
@@ -738,7 +709,6 @@ button:hover {
     display: none;
   }
 }
-
 @media screen and (min-width: 768px) {
   .footer__menu {
     margin-left: -20px;
@@ -759,7 +729,6 @@ button:hover {
     display: none;
   }
 }
-
 @media screen and (min-width: 768px) {
   .address {
     display: block;
@@ -815,7 +784,6 @@ button:hover {
     display: none;
   }
 }
-
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
@@ -862,5 +830,4 @@ button:hover {
   padding: 10px;
   color: #fff;
   text-decoration: none;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
