@@ -15,14 +15,30 @@
 
 .benefits__item {
     text-align: center;
+    margin-bottom: 40px;
 
   @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
     width: calc((100% - 10px * 6) / 3);
   }
 }
 
+.benefits__icon{
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  fill:$buttonColor;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 1px $buttonColor;
+}
+
+.benefits__item_title {
+  margin-top: 20px;
+}
+
 .benefits__item_description {
     margin-top: 10px;
+    color: $descriptionColor;
 }

@@ -470,8 +470,8 @@ button:hover {
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.2))), url("../src/img/banner/photo_2022-06-16_16-59-51.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.2)), url("../src/img/banner/photo_2022-06-16_16-59-51.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.2))), url("..//img/banner/banner.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.2)), url("..//img/banner/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -555,9 +555,9 @@ button:hover {
 .about__description {
   margin-top: 20px;
   text-align: justify;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.5;
   color: #cdd4d7;
 }
 
@@ -652,23 +652,124 @@ button:hover {
 
 .benefits__item {
   text-align: center;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
+    margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
     width: calc((100% - 60px) / 3);
   }
 }
 
+.benefits__icon {
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  fill: #3e44ff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 4px 1px #3e44ff;
+          box-shadow: 0px 0px 4px 1px #3e44ff;
+}
+
+.benefits__item_title {
+  margin-top: 20px;
+}
+
 .benefits__item_description {
   margin-top: 10px;
+  color: #cdd4d7;
+}
+
+.contacts {
+  padding-top: 40px;
+}
+
+.contacts__container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 280px) {
+  .contacts__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.contacts__map {
+  width: 50%;
+}
+
+.contacts__map_img {
+  display: inline-block;
+  width: 100%;
+}
+
+.contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.contacts__item_title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+}
+.contacts__item_title::before {
+  content: "";
+}
+
+.contacts__item_description {
+  color: #cdd4d7;
 }
 
 .contacts__messages_icon {
   width: 25px;
   height: 25px;
   fill: #ffffff;
+}
+
+.contacts__messages_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts__messages_item {
+  margin-left: 10px;
 }
 
 .footer {
