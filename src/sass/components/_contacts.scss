@@ -1,5 +1,6 @@
 .contacts {
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .contacts__container{
@@ -7,32 +8,67 @@
     display: flex;
      @media screen and (min-width:280px) {
         flex-direction: column;
-        align-items: center;
+        flex-direction: column-reverse;
         justify-content: center;
      }
 
     @media screen and (min-width:$tablet) {
         display: flex;
         flex-direction: row;
-        // justify-content: space-between;
+
     }
 }
 
 .contacts__map{
-    width: 50%;
+
+    @media screen and (min-width:$mobile_280) {
+    width: 100%;
+    }
+
+    @media screen and (min-width:$tablet) {
+    width: calc(100% / 2);
+    }
 }
 
 .contacts__map_img{
     display: inline-block;
+    // width: 100%;
+}
+
+.contacts__adress {
+
+    @media screen and (min-width: $mobile_280) {
+    padding-bottom: 20px;
     width: 100%;
+    }
+
+    @media screen and (min-width: $tablet) {
+    padding-bottom: 0;
+    width: calc(100% / 2);
+    }
+
 }
 
 .contacts__list {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    text-align: left;
+
+    @media screen and (min-width:$tablet) {
+        margin-left: 50px;
+    }
+}
+
+.contacts__item {
+
+    @media screen and (min-width:$mobile_280) {
     text-align: center;
-    // margin-left: auto;
+    }
+
+    @media screen and (min-width:$tablet) {
+        text-align: left;
+    }
+    margin-top: 30px;
 }
 
 .contacts__item_title{
@@ -48,31 +84,38 @@
     }
 }
 
-.contacts__item_description{
-    color: $descriptionColor;
-}
-
-.contacts__messages_item{
-
+.contacts__item_description {
+    margin-top: 10px;
+    color: $buttonColor;
 }
 
 
-
-.contacts__messages_icon {
-    // display: none;
-    width: 25px;
-    height: 25px;
-    fill: $textColor;
-}
 
 .contacts__messages_list {
     display: flex;
+
+    @media screen and (min-width:$mobile_280) {
     justify-content: center;
-    // align-items: center;
+    }
+
+    @media screen and (min-width:$tablet) {
+    justify-content: left;
+    }
+
 }
 
 .contacts__messages_item {
 
     margin-left: 10px;
+}
+
+.contacts__messages_icon {
+    width: 25px;
+    height: 25px;
+    fill: $textColor;
+
+    &:hover, &:active {
+        fill: $buttonColor;
+    } 
 }
 

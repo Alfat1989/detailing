@@ -24,7 +24,8 @@
             </a>
 
             <nav class="header__nav">
-                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <button type="button" class="menu-toggle js-open-menu header__burger" aria-expanded="false"
+                    aria-controls="mobile-menu">
                     <svg class="header__menu_icon">
                         <use href="./img/sprite.svg#burger-menu"></use>
                     </svg>
@@ -63,6 +64,10 @@
                     тюнинг авто <br />
                     г. Казань
                 </h1>
+                <!-- <div class="hero__img_container">
+                    <img class="hero__img" src="./img/auto/lambo.png" />
+
+                </div> -->
                 <p class="hero__description">Премиум уход за вашим автомобилем</p>
                 <button type="button" class="hero__button button">Записаться</button>
             </div>
@@ -157,8 +162,9 @@
                         </svg>
                         <h3 class="benefits__item_title">Премиум материалы</h3>
                         <p class="benefits__item_description">
-                            Используем премиально качественные материалы, ведь только при использовании премиальных
-                            материалов можно добиться отличного результата
+                            Все оборудование и составы от ведущих производителей в мире детейлинга, что гарантирует
+                            максимально качественную работу
+                            и лучший результат
                         </p>
                     </li>
 
@@ -194,61 +200,59 @@
                 <div class="contacts__container">
 
                     <div class="contacts__map">
-                        <img src="./img/banner/banner.jpg" class="contacts__map_img" />
+                        <iframe src="https://snazzymaps.com/embed/406986" width="100%" height="500px"
+                            style="border:none;"></iframe>
+                        <!-- <img src="./img/banner/banner.jpg" class="contacts__map_img" /> -->
                     </div>
 
-                    <ul class="contacts__list">
-                        <li class="contacts__item">
-                            <h3 class="contacts__item_title">Телефон</h3>
-                            <p class="contacts__item_description">+7(777)777-77-77</p>
-                        </li>
-                        <!-- <li class="contacts__item">
-                            <h3 class="contacts__item_title">Почта</h3>
-                            <p class="contacts__item_description"></p>
-                        </li> -->
-                        <li class="contacts__item">
-                            <h3 class="contacts__item_title">Адрес</h3>
-                            <p class="contacts__item_description">г. Казань ул. Название 99</p>
-                        </li>
+                    <div class="contacts__adress">
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <h3 class="contacts__item_title">Телефон</h3>
+                                <a href="tel:+79869309870">
+                                    <p class="contacts__item_description">+7(986) 930-98-70</p>
+                                </a>
+                            </li>
 
-                        <li class="contacts__item">
-                            <ul class="contacts__messages_list">
-                                <li class="contacts__messages_item">
-                                    <a href="#" class="contacts__message_link">
-                                        <svg class="contacts__messages_icon">
-                                            <use href="./img/sprite.svg#telegram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
+                            <li class="contacts__item">
+                                <h3 class="contacts__item_title">Адрес</h3>
+                                <p class="contacts__item_description">Силикатная улица, 4А, Казань</p>
+                            </li>
 
-                                <li class="contacts__messages_item">
-                                    <a href="#" class="contacts__message_link">
-                                        <svg class="contacts__messages_icon">
-                                            <use href="./img/sprite.svg#whatsapp"></use>
-                                        </svg>
-                                    </a>
-                                </li>
+                            <li class="contacts__item">
+                                <ul class="contacts__messages_list">
+                                    <li class="contacts__messages_item">
+                                        <a href="https://telegram.me/MakarichXx" class="contacts__message_link">
+                                            <svg class="contacts__messages_icon">
+                                                <use href="./img/sprite.svg#telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
 
-                                <li class="contacts__messages_item">
-                                    <a href="#" class="contacts__message_link">
-                                        <svg class="contacts__messages_icon">
-                                            <use href="./img/sprite.svg#facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
+                                    <li class="contacts__messages_item">
+                                        <a href="https://wa.me/79869309870?" class="contacts__message_link">
+                                            <svg class="contacts__messages_icon">
+                                                <use href="./img/sprite.svg#whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
 
-                                <li class="contacts__messages_item">
-                                    <a href="#" class="contacts__message_link">
-                                        <svg class="contacts__messages_icon">
-                                            <use href="./img/sprite.svg#instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
+                                    <li class="contacts__messages_item">
+                                        <a href="https://instagram.com/rs_detailing_kzn?igshid=YmMyMTA2M2Y="
+                                            class="contacts__message_link">
+                                            <svg class="contacts__messages_icon">
+                                                <use href="./img/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
 
-                            </ul>
-                        </li>
+                                </ul>
+                            </li>
 
-                    </ul>
+                        </ul>
+
+                    </div>
+
 
 
                 </div>
@@ -298,16 +302,17 @@
         </button>
 
         <ul class="mobile-menu">
-            <li><a href="/" class="link">Главная</a></li>
-            <li><a href="#about" class="link">О нас</a></li>
-            <li><a href="#gallery" class="link">Галерея</a></li>
-            <li><a href="#contacts" class="link">Контакты</a></li>
+            <li><a href="/" class="link mobile-link">Главная</a></li>
+            <li><a href="#about" class="link mobile-link">О нас</a></li>
+            <li><a href="#gallery" class="link mobile-link">Галерея</a></li>
+            <li><a href="#contacts" class="link mobile-link">Контакты</a></li>
         </ul>
 
     </div>
 
     <script src="./index.js" type="module"></script>
     <script defer src="./js/mobile-menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </body>
 
 </html>

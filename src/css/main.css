@@ -470,13 +470,23 @@ button:hover {
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.2))), url("..//img/banner/banner.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.2)), url("..//img/banner/banner.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.2))), url("..//img/auto/mercedes.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.2)), url("..//img/auto/mercedes.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 150px;
+}
+@media screen and (min-width: 280px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
 }
 
 .hero__title {
@@ -528,9 +538,22 @@ button:hover {
   }
 }
 
+.hero__img_container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+.hero__img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+}
+
 .hero__button {
   display: block;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 8px 30px;
@@ -684,6 +707,7 @@ button:hover {
 
 .contacts {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .contacts__container {
@@ -698,9 +722,7 @@ button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column-reverse;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -718,13 +740,32 @@ button:hover {
   }
 }
 
-.contacts__map {
-  width: 50%;
+@media screen and (min-width: 280px) {
+  .contacts__map {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__map {
+    width: 50%;
+  }
 }
 
 .contacts__map_img {
   display: inline-block;
-  width: 100%;
+}
+
+@media screen and (min-width: 280px) {
+  .contacts__adress {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__adress {
+    padding-bottom: 0;
+    width: 50%;
+  }
 }
 
 .contacts__list {
@@ -735,9 +776,26 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    margin-left: 50px;
+  }
+}
+
+.contacts__item {
+  margin-top: 30px;
+}
+@media screen and (min-width: 280px) {
+  .contacts__item {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    text-align: left;
+  }
 }
 
 .contacts__item_title {
@@ -750,7 +808,32 @@ button:hover {
 }
 
 .contacts__item_description {
-  color: #cdd4d7;
+  margin-top: 10px;
+  color: #3e44ff;
+}
+
+.contacts__messages_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 280px) {
+  .contacts__messages_list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__messages_list {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+.contacts__messages_item {
+  margin-left: 10px;
 }
 
 .contacts__messages_icon {
@@ -758,18 +841,8 @@ button:hover {
   height: 25px;
   fill: #ffffff;
 }
-
-.contacts__messages_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contacts__messages_item {
-  margin-left: 10px;
+.contacts__messages_icon:hover, .contacts__messages_icon:active {
+  fill: #3e44ff;
 }
 
 .footer {
