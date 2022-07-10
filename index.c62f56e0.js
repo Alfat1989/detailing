@@ -1,0 +1,2 @@
+const e=document.querySelector(".header__burger"),c=document.querySelector(".menu-container"),n=document.querySelector(".close-btn"),t=document.querySelectorAll(".mobile-link");function o(){c.classList.toggle("is-open");t.forEach((e=>{e.addEventListener("click",i)}))}function i(e){c.classList.toggle("is-open")}e.addEventListener("click",o),n.addEventListener("click",o),window.matchMedia("(min-width: 768px)").addEventListener("change",(e=>{e.matches&&(c.classList.remove("is-open"),bodyScrollLock.enableBodyScroll(document.body))}));
+//# sourceMappingURL=index.c62f56e0.js.map
