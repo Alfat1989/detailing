@@ -1,18 +1,15 @@
 .servises {
   padding-top: 20px;
-
 }
 
 .servises__list {
   margin-top: 30px;
- 
 
   @media screen and (min-width: 768px) {
     margin-left: -10px;
     margin-right: -10px;
     display: flex;
     flex-wrap: wrap;
-    
   }
 }
 
@@ -28,13 +25,11 @@
     margin-left: 10px;
     margin-right: 10px;
 
-    width: calc((100% - 4 * 10px)/2);
-  
+    width: calc((100% - 4 * 10px) / 2);
   }
 
   @media screen and(min-width: 1024px) {
-    width: calc((100% - 6 * 10px)/3);
-  
+    width: calc((100% - 6 * 10px) / 3);
   }
 }
 
@@ -47,7 +42,6 @@
     opacity: 0.6;
     box-shadow: 0px 0px 4px 1px white;
   }
-
 }
 
 .servises__desc {
@@ -58,17 +52,8 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
-  opacity: 0.7;
+  // opacity: 0.7;
 
   font-size: 16px;
   font-weight: 500;
-
-  .servise__img:hover & {
-    opacity: 0.9;
-    font-weight: 700;
-  }
-
-  // &:hover, &:active {
-  //     opacity: 0.6;
-  // }
 }

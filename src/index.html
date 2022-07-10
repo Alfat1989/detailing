@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header page-header">
         <div class="container header__container">
             <a href="/" class="header__link">
                 <img src="./img/logo/logo-mini.png" alt="logo" class="header__logo" />
@@ -47,9 +47,7 @@
             </nav>
 
             <div class="header__adress">
-                <a href="#" class="adress__link">
-                    г. Казань
-                </a>
+                <a href="#" class="adress__link"> г. Казань </a>
                 <a href="tel:+79869309870" class="header__phone">+7(986) 930-98-70</a>
                 <p class="header__day">с 9:00 до 21:00</p>
             </div>
@@ -69,7 +67,7 @@
 
                 </div> -->
                 <p class="hero__description">Премиум уход за вашим автомобилем</p>
-                <button type="button" class="hero__button button">Записаться</button>
+                <a href="tel:+79869309870" class="hero__button">Позвонить</a>
             </div>
         </section>
 
@@ -77,8 +75,9 @@
             <div class="container">
                 <h2 class="about__title title">О нас</h2>
                 <p class="about__description">
-                    Ваботаем в сфере детейлинга с 2017 года. Предоставляем все услуги детейлинга, начиная от полировки
-                    кузова и заканчивая бронированием кузова броне пленкой. На счету наших мастеров более 1000 довольных
+                    Ваботаем в сфере детейлинга с 2017 года. Предоставляем все услуги
+                    детейлинга, начиная от полировки кузова и заканчивая бронированием
+                    кузова броне пленкой. На счету наших мастеров более 1000 довольных
                     клиентов.
                 </p>
             </div>
@@ -152,7 +151,8 @@
                         </svg>
                         <h3 class="benefits__item_title">Гарантии</h3>
                         <p class="benefits__item_description">
-                            Мы предлагаем гарантию не только на работы, но и на расходные материалы.
+                            Мы предлагаем гарантию не только на работы, но и на расходные
+                            материалы.
                         </p>
                     </li>
 
@@ -162,9 +162,9 @@
                         </svg>
                         <h3 class="benefits__item_title">Премиум материалы</h3>
                         <p class="benefits__item_description">
-                            Все оборудование и составы от ведущих производителей в мире детейлинга, что гарантирует
-                            максимально качественную работу
-                            и лучший результат
+                            Все оборудование и составы от ведущих производителей в мире
+                            детейлинга, что гарантирует максимально качественную работу и
+                            лучший результат
                         </p>
                     </li>
 
@@ -198,10 +198,9 @@
                 <h2 class="contacts__title title">Контакты</h2>
 
                 <div class="contacts__container">
-
                     <div class="contacts__map">
                         <iframe src="https://snazzymaps.com/embed/406986" width="100%" height="500px"
-                            style="border:none;"></iframe>
+                            style="border: none"></iframe>
                         <!-- <img src="./img/banner/banner.jpg" class="contacts__map_img" /> -->
                     </div>
 
@@ -216,13 +215,16 @@
 
                             <li class="contacts__item">
                                 <h3 class="contacts__item_title">Адрес</h3>
-                                <p class="contacts__item_description">Силикатная улица, 4А, Казань</p>
+                                <p class="contacts__item_description">
+                                    Силикатная улица, 4А, Казань
+                                </p>
                             </li>
 
                             <li class="contacts__item">
+
                                 <ul class="contacts__messages_list">
                                     <li class="contacts__messages_item">
-                                        <a href="https://telegram.me/MakarichXx" class="contacts__message_link">
+                                        <a href="https://t.me/rs_detailing_kzn" class="contacts__message_link">
                                             <svg class="contacts__messages_icon">
                                                 <use href="./img/sprite.svg#telegram"></use>
                                             </svg>
@@ -245,16 +247,10 @@
                                             </svg>
                                         </a>
                                     </li>
-
                                 </ul>
                             </li>
-
                         </ul>
-
                     </div>
-
-
-
                 </div>
             </div>
         </section>
@@ -293,7 +289,7 @@
     </footer>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+        <button class="menu-toggle js-close-menu close-btn">
             <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path fill-rule="evenodd"
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -302,16 +298,60 @@
         </button>
 
         <ul class="mobile-menu">
-            <li><a href="/" class="link mobile-link">Главная</a></li>
-            <li><a href="#about" class="link mobile-link">О нас</a></li>
-            <li><a href="#gallery" class="link mobile-link">Галерея</a></li>
-            <li><a href="#contacts" class="link mobile-link">Контакты</a></li>
+            <li class="mobile__item">
+                <a href="/" class="link mobile-link">Главная1</a>
+            </li>
+            <li class="mobile__item">
+                <a href="#about" class="link mobile-link">О нас</a>
+            </li>
+            <li class="mobile__item">
+                <a href="#gallery" class="link mobile-link">Галерея</a>
+            </li>
+            <li class="mobile__item">
+                <a href="#contacts" class="link mobile-link">Контакты</a>
+            </li>
         </ul>
 
+        <div class="mobile__social">
+            <ul class="contacts__messages_list">
+                <li class="contacts__messages_item">
+                    <a href="https://t.me/rs_detailing_kzn" class="contacts__message_link">
+                        <svg class="contacts__messages_icon">
+                            <use href="./img/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="contacts__messages_item">
+                    <a href="https://wa.me/79869309870?" class="contacts__message_link">
+                        <svg class="contacts__messages_icon">
+                            <use href="./img/sprite.svg#whatsapp"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="contacts__messages_item">
+                    <a href="https://instagram.com/rs_detailing_kzn?igshid=YmMyMTA2M2Y=" class="contacts__message_link">
+                        <svg class="contacts__messages_icon">
+                            <use href="./img/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile__logo">
+            <a href="/" class="mobile__logo_link">
+                <img src="./img/logo/logo-mini.png" alt="logo" class="mobile__logo_img" />
+            </a>
+        </div>
     </div>
 
     <script src="./index.js" type="module"></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script> -->
+    <script defer src="./js/mobile-menu.js" type="module"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </body>
 
