@@ -54,6 +54,41 @@
         </div>
     </header>
 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] =
+                m[i] ||
+                function () {
+                    (m[i].a = m[i].a || []).push(arguments);
+                };
+            m[i].l = 1 * new Date();
+            (k = e.createElement(t)),
+                (a = e.getElementsByTagName(t)[0]),
+                (k.async = 1),
+                (k.src = r),
+                a.parentNode.insertBefore(k, a);
+        })(
+            window,
+            document,
+            "script",
+            "https://mc.yandex.ru/metrika/tag.js",
+            "ym"
+        );
+
+        ym(89882664, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+        });
+    </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/89882664" style="position: absolute; left: -9999px" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <main>
         <section class="hero" id="hero">
             <div class="container">
@@ -181,11 +216,12 @@
             </div>
         </section>
 
-        <section class="gallery" id="gallery">
+        <!-- <section class="gallery__section" id="gallery">
             <div class="container">
-                <h2 class="gallery__title title">Галлерея работ</h2>
+                <h2 class="gallery__title title">Наши работы</h2>
+                <ul class="gallery"></ul>
             </div>
-        </section>
+        </section> -->
 
         <section class="request">
             <div class="container">
@@ -221,7 +257,6 @@
                             </li>
 
                             <li class="contacts__item">
-
                                 <ul class="contacts__messages_list">
                                     <li class="contacts__messages_item">
                                         <a href="https://t.me/rs_detailing_kzn" class="contacts__message_link">
