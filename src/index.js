@@ -4,6 +4,21 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import { galleryItems } from "./js/gallery-items";
 
 const galleryEl = document.querySelector(".gallery");
+const anchors = document.querySelectorAll("a[href*='#']");
+for (let anchor of anchors) {
+  if (anchor) {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const anchorId = anchor.getAttribute("href");
+      console.log(anchorId);
+      document.querySelector(anchorId).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  }
+}
+
 galleryEl.style.listStyle = "none";
 
 function addGalleryMarkup(gallery) {
@@ -33,3 +48,12 @@ const instance = new SimpleLightbox(".gallery a", {
   docClose: true,
   captionsData: "alt",
 });
+
+const scrollAnchors = (e) => {
+  e.preventDefault();
+  const anchorId = this.getAttribute("href");
+  document.querySelector(anchorId).scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
