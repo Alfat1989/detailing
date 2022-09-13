@@ -2,14 +2,19 @@ body {
   padding-top: 80px;
   background: linear-gradient(to right, #0e0e19, #1b1d31);
   color: $textColor;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 img {
   display: block;
 }
 
-ul,li {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -47,20 +52,19 @@ h6 {
   }
 
   @media screen and (min-width: 768px) {
-      width: 768px;
+    width: 768px;
   }
 
   @media screen and (min-width: 1024px) {
-      width: 1024px;
+    width: 1024px;
   }
 
   @media screen and (min-width: 1200px) {
-      width: 1200px;
+    width: 1200px;
   }
-
 }
 
-.title{
+.title {
   font-size: 28px;
   font-weight: 400;
   text-align: center;
@@ -75,6 +79,4 @@ button {
   font-weight: 600;
   letter-spacing: 0.8;
   line-height: normal;
-
-  
 }
