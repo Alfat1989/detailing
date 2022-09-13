@@ -21,6 +21,7 @@
     "parcel": "^2.6.1"
   },
   "dependencies": {
+    "jquery": "^3.6.1",
     "sass": "^1.52.3",
     "simplelightbox": "^2.10.3"
   }
